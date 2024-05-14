@@ -12,10 +12,74 @@
       <h1 class="mb-5">Accordion & Collapse</h1>
 
       <!-- Accordion -->
-
+      <div id="myaccordion" class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+             class="accordion-button" 
+             data-bs-toggle="collapse"
+             data-bs-target="#collapseOne" >
+            Accordion 1
+            </button>
+          </h2>
+          <div id="collapseOne"
+           class="accordion-collapse collapse show" data-bs-parent="#myaccordion">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quidem deleniti voluptatum at voluptas aperiam ullam eius animi, tempore repellendus sequi itaque fugiat sapiente praesentium cum quae repellat consequuntur pariatur.
+          </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+             class="accordion-button" 
+             data-bs-toggle="collapse"
+             data-bs-target="#collapseTwo" >
+            Accordion 2
+            </button>
+          </h2>
+          <div id="collapseTwo"
+           class="accordion-collapse collapse" data-bs-parent="#myaccordion">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quidem deleniti voluptatum at voluptas aperiam ullam eius animi, tempore repellendus sequi itaque fugiat sapiente praesentium cum quae repellat consequuntur pariatur.
+          </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+             class="accordion-button" 
+             data-bs-toggle="collapse"
+             data-bs-target="#collapseThree" >
+            Accordion 3
+            </button>
+          </h2>
+          <div id="collapseThree"
+           class="accordion-collapse collapse" data-bs-parent="#myaccordion">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quidem deleniti voluptatum at voluptas aperiam ullam eius animi, tempore repellendus sequi itaque fugiat sapiente praesentium cum quae repellat consequuntur pariatur.
+          </div>
+          </div>
+        </div>
+      </div>
       <br /><br />
 
       <!-- Collapse -->
+      <div class="my-3">
+        <button 
+        class="btn btn-primary" 
+        data-bs-toggle="collapse"
+        data-bs-target="#mycontent">
+        Toggle Content
+        </button>
+      </div>
+   <div class="collapse show" id="mycontent">
+    <div class="card">
+      <div class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam eos nihil doloribus corporis saepe earum explicabo, ab maxime reiciendis neque nulla facilis vel cum laudantium, minima praesentium beatae aspernatur.
+      </div>
+    </div>
+   </div>
 
       <!-- Don't go past here -->
     </div>
