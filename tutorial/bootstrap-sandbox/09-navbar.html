@@ -43,7 +43,7 @@
     <br /><br />
 
     <!-- Color Variant -->
-    <nav class="navbar navbar-expand-md bg-primary  navbar-light ">
+    <!-- <nav class="navbar navbar-expand-md bg-primary  navbar-light ">
       <div class="container">
         <a href="" class="navbar-brand">Navbar</a>
         <button 
@@ -71,11 +71,11 @@
         </ul>
       </div>
       </div>
-    </nav>
+    </nav> -->
     <br /><br />
 
     <!-- Fixed Top -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top ">
+    <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top ">
       <div class="container">
         <a href="" class="navbar-brand">Navbar</a>
         <button 
@@ -103,9 +103,9 @@
         </ul>
       </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- Form In Navbar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+    <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
       <div class="container">
         <a href="" class="navbar-brand">Navbar</a>
         <form action="" class="d-flex" role="search">
@@ -113,10 +113,10 @@
           <button class="btn btn-dark">Search</button>
         </form>
       </div>
-    </nav>
+    </nav> -->
     <br /><br />
 
-    <p>
+    <!-- <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga magni
       delectus libero eius necessitatibus. Aut quos eos ex non porro inventore
       minima, rerum magnam voluptate, ad doloremque fugiat perferendis obcaecati
@@ -170,7 +170,7 @@
       distinctio voluptatum quisquam quo odit quae amet laboriosam dolorem
       corporis quam quasi reprehenderit perferendis ullam qui placeat, eius,
       omnis dolores ut fuga unde fugit. Suscipit, asperiores modi?
-    </p>
+    </p> -->
 
     <div id="about">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sit
@@ -180,5 +180,23 @@
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Select all nav-link elements
+      var navLinks = document.querySelectorAll('.nav-link');
+      var navbarCollapse = document.getElementById('navbarNav');
+    
+      navLinks.forEach(function(navLink) {
+        navLink.addEventListener('click', function() {
+          var navbarToggler = document.querySelector('.navbar-toggler');
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            // Only collapse the navbar if the toggler button is visible
+            var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+              toggle: true
+            });
+            bsCollapse.hide();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
